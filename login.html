@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>天狗超市-登录</title>
+		<link rel="stylesheet" type="text/css" href="css/homepage-style.css" />
+		<link rel="stylesheet" type="text/css" href="font_58s6xfeugmu6jemi/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="font_oex9o5u4t2/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="font_id8ly8ygl9/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="font_gouwuche/iconfont.css"/>
+		<!-- 引入我的符号们 -->
+		<style type="text/css">
+			*{ margin:0; padding:0; list-style: none;}
+			* {box-sizing:border-box; }			
+			body{ width: 1350px; background:  #f8f8f8;
+			display: flex;flex-direction: column; justify-content: center; align-items: center;}
+			header{ width: 100%; height: 264px;background:  #f8f8f8; border-bottom: 1px solid darkgrey;
+				display: flex;flex-direction: column; justify-content: center; align-items: center;}
+			#infobox{ width:450px; height: 360px;display: flex;flex-direction: column; align-items: center;position:absolute;left: 470px;}
+				#infobox p{ width: 100%; height: 100px; line-height: 100px; text-align: center;}
+				#infobox input{ width: 448px; height: 40px; border: 1px solid darkgray; border-radius: 3px;}
+				#infobox span{ display:block;width: 100%; height:30px; line-height:30px; font-size: 10px; color: darkgrey;}
+				#infobox #btn2{ width: 220px; height: 50px; border-radius: 3px; background: #006aae;
+					text-align: center; line-height: 50px; color: white; font-size: 20px; font-weight: bold;}
+		</style>
+	</head>
+	<div class="nav">
+			<!-- 分区使用样式 -->
+			<div class="nav_top">
+				<!-- 网页顶端 -->
+				<div class="nav_top_login">
+					您好！天狗超市欢迎您！
+					<a id="denglu" href="login.html">登录</a>
+					<a id="zhuce" href="register.html">新用户注册</a>
+				</div>
+				<div class="nav_top_list">
+					<!-- 表单样式 -->
+					<ul id="nav_top_list_ul">
+							<li><i class="iconfont icon-tubiaozhizuomoban11"></i><a href="mypage.html">我的天狗</a><i class="iconfont">&#xe6a6;</i>
+							<!-- &#xe6a6用于加一个小箭头 -->
+							<!-- <ul id="nav_top_list_1_ul">
+								<li>个人资料</li>
+								<li>我的订单</li>
+								<li>我的优惠券</li>
+								<li>服务中心</li>
+								<li>商品点评</li>
+								<li>购物咨询</li>
+							</ul> -->
+						</li>
+						<li><i class="iconfont icon-tubiaozhizuomoban3"></i>帮助中心<i class="iconfont">&#xe6a6;</i>
+							<!-- <ul id="nav_top_list_2_ul">
+								<li>常见问题</li>
+								<li>忘记密码</li>
+								<li>联系我们</li>
+								<li>增值服务</li>
+								
+								
+							</ul> -->
+						</li>
+						<li>快购工具<i class="iconfont">&#xe6a6;</i>
+							<!-- <ul id="nav_top_list_3_ul">
+								<li>常购清单</li>
+								<li>一页购齐</li>
+								
+							</ul> -->
+						</li>
+						<li>会籍介绍<i class="iconfont">&#xe6a6;</i>
+							<!-- <ul id="nav_top_list_4_ul">
+								<li>成为会员</li>
+								<li>会员优惠</li>
+								<li>会员福利</li>
+							</ul> -->
+							
+						</li>
+						<li>制作者微信<i class="iconfont">&#xe6a6;</i>
+							<!-- <ul id="nav_top_list_5_ul">
+								
+							</ul> -->
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+	<body>
+		<header>
+			<a href="#"><img src="img/tianmaochaoshi.jpg" /></a>
+			<p>——  登录   ——</p>
+		</header>				
+		<div id="infobox">
+			<p>已开通天狗网购用户，请登录</p>
+			<input type="text" name="" id="user" value="" placeholder="用户名"/>
+			<span></span>				
+			<input type="password" name="" id="pass" value="" placeholder="设置密码"/>
+			<span></span>					
+			<input type="button" name="" id="btn2" value="登录" />				
+		</div>				
+	</body>
+</html>

@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+*{ margin:0; padding:0; list-style: none;}
+* {box-sizing:border-box; }
+img{ display: block;}/* 将图片属性设置为块 */
+body{ width: 1249px; background:white;}/* 主体的宽度为1350px，背景颜色为白色 */
+a{ text-decoration: none; }/*标准文本*/
+
+.photo{width: 40%; height: 100px; background-color: aqua;}
+.information{width: 500px; height: auto;position: absolute;left: 500px;top: 150px;}
+.jieshaogongneng{width: 1200px;height: 0px;;position: absolute;background-color: chartreuse;top: 600px;}
+.jieshaogongneng #shipin{height: 100;width: auto;font-size: 40px;text-align: center;background-color: #1b78b5;color: white;}
+.jieshaogongneng #video-yangshi{width: 500px;height: 400px;}
+.jieshaogongneng #shipin-1{width: 500px;height: 500px;left: 0px;background-color: turquoise;}
+.jieshaogongneng #shipin-2{top: 70px;left: 550px;position: absolute;width: 500px;}
+.lianxiwomen{position: absolute;width: 1200px;height: 50px;top: 1200px;background-color: #1b78b5;text-align: center;font-size: 30px;color: white;}

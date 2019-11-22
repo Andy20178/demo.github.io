@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+*{ margin:0; padding:0; list-style: none;}
+* {box-sizing:border-box; }
+img{ display: block;}/* 将图片属性设置为块 */
+body{ width: 1249px; background:white;}/* 主体的宽度为1350px，背景颜色为白色 */
+a{ text-decoration: none; }/*标准文本*/
+.nav{ width: 100%; height: 142px; background: #0069aa;}
+
+
+/* 第一行，包括登录注册口、列表 */
+
+.nav .nav_top{ width: 100%; height: 34px; border-bottom: 1px solid white; position: relative;}/*设置文本的下划线样式，定位为相对定位*/
+	.nav_top .nav_top_login{ width: 200px; height: 100%;  position: absolute; left: 53px;/*绝对宽度*/
+	text-align: center; line-height: 34px; font-size: 10px; color:white;} 
+		.nav_top_login a{color: white;}
+	.nav_top .nav_top_list{position: absolute; right: 73px; height: 100%; width: 432px;padding-top: 2px;}/* list上内边距 */
+		.nav_top_list ul { display: flex; justify-content: space-between;/*使用flex布局，其中元素在左右两边铺开排列*/
+			align-self: auto;}/*元素位置*/
+		.nav_top_list ul li {color: white; width:78px;height:28px; 
+			line-height: 28px; font-size: 10px;float: left; 
+			position: relative; padding-left: 5px;}
+			/* .nav_top_list ul li img { position: absolute; right:4px; top: 10px;} */
+			.nav_top_list ul li ul{position: absolute; width:100px;  background: white; z-index:3;/*列表优先级最高，会覆盖下面的图片*/ 
+				left: -10px;top:36px; display: none;padding: 3px;/*内边距*/}
+			
+/* 第二行，包括lOGO和地址		 */
+.nav .nav_mid{ width: 100%; height: 68px; position: relative;}
+	.nav_mid #nav-mid-logo{ position: absolute; left: 73px;}/*绝对位置*/
+	.nav_mid #address { width: 450px; height: 30px;  position: absolute;
+		left: 330px; top: 19px; line-height: 30px;}
+		#address p{float: left;}
+		#address p:nth-child(1){ font-size:16px;color: white;}/*第一个子元素的文字大小和颜色，即那个小圆点*/
+		#address p:nth-child(2){ font-size: 14px;color:white;}/*第二个子元素的文字大小和颜色,即北邮那几个字*/
+		#address a{display: block;float:right; width: 70px; height: 30px; background:#1b78b5;
+			 border: solid 1px #8fccf8; font-size: 10px; line-height: 30px; 
+			 text-align: center;color:white;}
+	.nav_mid #myshopping{ width: 70px; height: 30px; line-height: 30px;position: absolute;
+	right: 300px;top: 19px;border: solid 1px #1b78b5;text-align: center;}
+	.nav_mid #myshopping a{ display:block;float: center;color:white ;
+		font-size: 10px;background:#1b78b5}
+
+/*第三行，导航栏*/
+.nav .nav_bot{ width: 100%; height: 40px; background: #004b8e; text-align: center;display: flex; justify-content: center; }/*flex布局，每个元素平铺开占满整个栏*/
+	.nav-bot-list{ width: 1204px; height:100%; display: flex;justify-content: center;}
+		.nav-bot-list li{position: relative;width: 110px;height: 40px; line-height: 40px; color:#FFFFFF;font-size: 14px;}
+			.nav-bot-list li a{ color: white;}
+			.navactive{ background:#f1f1f1; border-left: 2px solid #004b8e; border-right: 2px solid #004b8e;}
+				
+				
+			
+/*轮播图模块*/	
+.lunbo{ width: 100%; height: 400px;position: relative; overflow: hidden;}
+	.imgbox li { position: absolute; width: 1350px;}	
+	.imgbtn{width: 810px; height: 34px; display: flex; justify-content: space-between; position: absolute;left: 270px; bottom:6px;} 
+		.imgbtn li{width: 110px; height: 100%;  background: #f3f8fc; text-align: center; line-height: 34px; 
+			color: #31363c;font-size: 10px; opacity: 0.9;cursor: pointer;}
+		
